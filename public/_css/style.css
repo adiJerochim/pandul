@@ -1,0 +1,103 @@
+*{
+    margin-top:0;
+}
+
+body{
+    margin:0;
+    background-color: #F9F9F9;
+    font-family: helvetica;
+}
+
+.all_site{
+    max-width: 480px;
+    min-height: 100px;
+    background-color: #EFEFEF;
+    margin:20px auto;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+.form {
+    padding: 20px;
+    background-color: #EFEFEF;
+    border-radius: 2px;
+}
+
+.feeds {
+    margin: 2px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+h1{
+    margin: 5px;
+    text-align: center;
+}
+
+a, a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.box{
+    width:100%;
+    background-color: white;
+    border-bottom: 1px solid appworkspace;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition:0.8s;
+    border-radius: 4px;
+}
+
+.box:hover{
+    background-color: #37ABE1;
+}
+
+
+.box img{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    max-width: 60px; 
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    transition: 0.8s;
+}
+
+.box h2{
+    color:black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.box p{
+    color: #868686;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-submit {
+    color: white;
+    font-weight: bold;
+    background-color: #37ABE1;
+}
+
+.search { position: relative; }
+.search input { text-indent: 30px;}
+.search .glyphicon-search { 
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 15px;
+    color: #B9B9B9;
+}

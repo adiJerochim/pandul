@@ -1,0 +1,28 @@
+
+<div class="form">
+    <form name="reviews_form" ng-controller="FeedsController as feedCtrl" ng-submit="feedCtrl.addFeed()">
+        <label hidden>Email</label>
+        <input class="form-control inputMail" type="text" ng-model="feedCtrl.feed.email" name="email" placeholder="Email"><br>
+        <label hidden>Message</label>
+        <textarea rows="4" class="form-control" ng-model="feedCtrl.feed.message" placeholder="Message"></textarea><br>
+        <button type="submit" class="btn btn-submit pull-right">SUBMIT</button><br><br>
+    </form>
+</div>
+
+<div class="feeds">
+
+    <label hidden>Filter</label>
+    <div class="search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <input type="text" class="form-control" ng-model="search_query" placeholder="Filter">
+    </div>
+    <br>
+
+    <div ng-repeat="feed in feeds| filter : search_query">
+        <div class="box">
+            <img gravatar-src="'{{ feed.email}}'" gravatar-size="100">
+            <h2>{{ feed.email}}</h2>
+            <p>{{ feed.message}}</p>
+        </div>
+    </div>
+</div>
