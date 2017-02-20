@@ -5,18 +5,6 @@ const { Comment } = require('./models');
 
 const app = express();
 
-const db = [
-    {
-        "email": "adi.jerochim@gmail.com",
-        "message": "Hello there, How are you?"
-    },
-    {
-        "email": "shay.lom.tamir@gmail.com",
-        "message": "Gooood!!!"
-    }
-];
-
-
 mongoose.connect('mongodb://adi:abc123@ds157459.mlab.com:57459/pandul');
 
 app.set('view engine', 'ejs');
