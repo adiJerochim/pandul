@@ -7,7 +7,7 @@ function ListController($scope, $http)
     });
 }
 
-var FeedsController = function ($scope, $http, $routeParams) 
+var FeedsController = function ($scope, $http) 
 {
     this.feed = {};
     this.feeds = [];
