@@ -4,12 +4,11 @@ function ListController($scope, $http)
 {
     $http.get('/api/feed').success(function (data) {
         $scope.feeds = data;
-    }).finally(function () {
-        console.log("finally finished repos");
     });
 }
 
-var FeedsController = function ($scope, $http, $routeParams) {
+var FeedsController = function ($scope, $http, $routeParams) 
+{
     this.feed = {};
     this.feeds = [];
     this.clearFeed = function () {
@@ -18,10 +17,12 @@ var FeedsController = function ($scope, $http, $routeParams) {
     this.addFeed = function () {
         var self = this;
         
-        $http.post('/api/feed', this.feed).success(function (data) {
-            $scope.feeds.push(data);
-            self.clearFeed();
-        });
+        if (this.feed.email && this.feed.message) {
+            $http.post('/api/feed', this.feed).success(function (data) {
+                $scope.feeds.push(data);
+                self.clearFeed();
+            });
+        }
     };
 };
 
