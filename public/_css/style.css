@@ -32,17 +32,6 @@ body{
     border-radius: 4px;
 }
 
-h1{
-    margin: 5px;
-    text-align: center;
-}
-
-a, a:hover {
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}
-
 .box{
     width:100%;
     background-color: white;
@@ -57,7 +46,6 @@ a, a:hover {
 .box:hover{
     background-color: #37ABE1;
 }
-
 
 .box img{
     float: left;
