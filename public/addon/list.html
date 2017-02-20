@@ -20,7 +20,7 @@
 
     <div ng-repeat="feed in feeds| filter : search_query">
         <div class="box">
-            <img gravatar-src="'{{ feed.email}}'" gravatar-size="100">
+            <img gravatar-src="'{{ feed.email | lowercase }}'" gravatar-size="100">
             <h2>{{ feed.email}}</h2>
             <p>{{ feed.message}}</p>
         </div>
