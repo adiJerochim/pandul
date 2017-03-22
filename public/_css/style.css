@@ -33,6 +33,7 @@ body{
 }
 
 .box{
+    word-wrap: break-word;
     width:100%;
     background-color: white;
     border-bottom: 1px solid appworkspace;
